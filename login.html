@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-Page</title>
+   <style>  
+    body {
+  margin: 0;
+  padding: 0;
+  background-color: #4c82cf;
+}
+.container {
+  width: 400px;
+  margin: auto;
+  text-align: center;
+  margin-top: 60px;
+  padding: 40px 0px;
+  border-radius: 15px;
+  background-color: white;
+  border: 1px solid white;
+}
+#login {
+  font-size: 20px;
+}
+.form_input1 {
+  width: 80%;
+  margin: 20px 0;
+  padding: 10px 10px;
+  font-size: 18px;
+}
+.form_button {
+  width: 80%;
+  margin: 20px 0;
+  padding: 20px 20px;
+  font-size: 18px;
+  border: none;
+  background-color: #7f53ac;
+  background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+  color: white;
+}
+a {
+  text-decoration: none;
+  color: #4b6e96;
+}
+input {
+  border: none;
+  border-bottom: 1px solid gray;
+}
+
+   </style>
+</head>
+<body>
+    <div class="container">
+        <form  class="form" id="login">
+            <h1 class="form_title">Login</h1>
+            <!-- <div class="form_message_error" >Incorrect username/password</div> -->
+            <div class="form_input_grp">
+                <input type="text" class="form_input1" placeholder="Email" id="log">
+                <!-- <div class="form_input_error_message"> this is an error </div>
+            </div> -->
+            <div class="form_input_grp">
+                <input type="password" class="form_input1" 
+                placeholder="Password" id="pass">
+                <div class="form_input_error_message"> </div>
+            </div>
+            <button class="form_button" type="submit" >Login </button>
+            <p class="form_text">
+                Forgot
+                <a href="#" class="form_link"> Password?</a>
+            </p>
+            <p class="form_text">
+              Don't have an account?
+                <a id="linkCreateAccount" href="signup.html" target="_blank" class="form_link"> Sign up</a>
+            </p>
+
+
+        </form>
+    </div>
+</body>
+</html>
