@@ -4,76 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up Page</title>
-    <style>
-        body{
-            display: flex;
-            justify-content: center;
-            margin-top: 100px;
-        }
-        div{
-            
-            width: 300px;
-            background-color: #49c9b0;
-            text-align: center;
-            line-height: 60px; 
-            padding: 20px;
-            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-        }
-        h1{
+    <title>Document</title>
+</head>
+<style>
+    #container{
+    
+        width: 30%;
+        height: 450px;
+        background-color: #48c9b0;
+        text-align: center;
+        margin: auto;
+        margin-top: 50px;
+        padding-top: 30px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+         }
+        #container>p{            
             color: white;
-            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            margin-bottom: 50px;
         }
         input{
             width: 80%;
-            height: 30px;
-            border: none;
-            padding: 10px;
+            height: 45px;
+            margin-bottom: 10px;
+            border: 0px;
+            padding-left: 10px;
+            font-size: 18px;
+            color: grey;
         }
-        #return{
-            width: 86.5%;
-            margin-bottom: 30px;
-            background-color: #16a589;
+        button{
+            background-color: #17a589;
+            width: 80%;
+            height: 45px;
+            margin-bottom: 10px;
             color: white;
-            font-weight: 500;
-            border: none;
-          
+            border: 0px ;
         }
-        #signup{
-            width: 86.5%;
-            background-color: #16a589;
-            color: white;
-            font-weight: 500;
-            border: none;
-        
-       }
+
+    
     </style>
-</head>
+    
+</style>
 <body>
-    <div>
-        <form action="">
-            <h1>-Visitor-</h1>
-            <input type="text" placeholder="Full name">
-            <br>
-            <input type="email" placeholder="Email">
-            <br>
-            <input type="text" placeholder="Organization">
-            <br>
-            <input id="signup" type="submit" value="SIGN UP">
-            <br>
-            <input  id ="return" type="button" value="RETURN">
-        </form>
-      
+    <div id="container">
+        <p>- Visitor -</p>
+        <div id="box">
+        <input placeholder="Full name"type="text">
+        <input placeholder="Email"type="text">
+        <input placeholder="Organization"type="text">
+        <br>
+        <button>SIGN UP</button>
+        <br>
+        <button>RETURN</button>
+        </div>
+        
     </div>
+    
+    
 </body>
-<script>
-    document.querySelector("#signup").addEventListener("click",SignUp);
-    function SignUp(){
-        alert("Sign up is Successfully Completed");
-    }
-    document.querySelector("#return").addEventListener("click",reTurn);
-    function reTurn(){
-       location.href="";//Add login page link here
-    }
-</script>
 </html>
