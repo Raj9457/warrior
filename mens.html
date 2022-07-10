@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>problem1.html</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        #container{
+            width: 90%;
+            height: 800px;
+            display: flex;
+           
+            margin: auto;
+            margin-top: 30px;
+            background-color: white;
+        }
+        #container>div{
+            width: 45%;
+            height: 100%;
+           
+            margin:auto;
+        }
+        img{
+            display: block;
+            margin: auto;
+            width: 40%;
+            height: 60%; 
+            margin-top: 30px;  
+        }
+        h1{
+            text-align:left;
+            font-size:45px;
+           margin-bottom: -30px;
+        }
+        p{
+            color: grey;
+            font-size: 35px;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        .price{
+            width:80%;
+            display: flex;
+            height: 70px;
+            margin-top: -60px;
+           
+        }
+        .price>p:nth-child(1){
+            color: black;
+            font-weight: bolder;
+           padding-right: 16px;
+        }
+        .price>p:nth-child(3){
+            color:green;
+            padding-left: 16px;
+        }
+        span{
+            text-decoration: line-through;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div>
+            <img src="https://m.media-amazon.com/images/I/61PyOzLYxIL._AC_UL320_.jpg" alt="">
+            <h1>HOODIE</h1>
+            <p>Men Cotton Long Sleeves Shrug</p>
+            <div class="price">
+                <p>₹359</p>
+                <p><span>₹1,499</span></p>
+                <p>-76%</p>
+            </div>
+        </div>
+        <div>
+            <img src="https://m.media-amazon.com/images/I/91ligE5pL4L._AC_UL320_.jpg" alt="">
+            <h1>JUBINATION</h1>
+            <p>Men Wool Sleevless Sweater</p>
+            <div class="price">
+                <p>₹799</p>
+                <p><span>₹1,499</span></p>
+                <p>-47%</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
